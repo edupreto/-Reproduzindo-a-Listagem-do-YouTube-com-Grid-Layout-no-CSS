@@ -1,0 +1,24 @@
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "aside section section section section"
+    "aside section section section section"
+    "aside section section section section"     
+}
+
+aside {     
+    display: grid;
+    grid-area: aside;    
+    grid-row: initial;          
+}
+
+aside img {
+    margin: .5rem;
+}
+
+section {    
+    grid-area: section;     
+}
